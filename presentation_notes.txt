@@ -1,0 +1,71 @@
+Demos
+-----
+* create table
+* lots of columns, no pre-definition.
+* parallel left joins
+* version & no-version
+* integration with Pentaho via Java step
+* cell-level security
+* mock accumulo
+
+Locality - definition and examples
+
+Lots of slides - we'll skip many, they are there for future reference if something catches your eye, we can explore it in more detail.
+
+
+MS = Morgan State
+MT = meetup
+
+Add touchpoints to Slide 2 - to give audience context.
+
+1. Intro to David Medinets, some contact information
+1. Contents - (preview, view, review)
+INTRODUCTION
+1. Accumulo Described
+1. Accumulo background (MS:7)
+1. Accumulo around the web - Accumulo user group on meetup.com, Sqrrl, Twitter feed, A. Cordova
+FEATURES
+1. Accumulo Monitor Page & Shell
+KEY, DEFINED
+1. Key is a 5-tuple (MS:17)
+1. Physical Data Model (MT:4)
+1. RDBS Representation (MT:5) Notice that public/private is not support.
+1. Hierarchical Decomposition (MT:6) - depiction of NoSQL scheams are not easy.
+1. Hierarchical Representation (MT:7) - the actual values.
+1. Column Visibility Semantics (MS:17 - simplified)
+1. Column Visibility Example (MS:18 - reworked)
+1. Tablet description (MS:10)
+1. Tablet Server Data Flow (MS:14)
+ITERATORS
+1. What is an Iterator? (MS:15) (MT:16) compare the two slides. combine?
+1. Iterator Scopes - scan, minor, major
+1. Major Compaction Scope (MS:42)
+1. Complex Iterators (MS:24 through MS:28)
+1. Iterator Summary (MS:29)
+1. Aggregation (MS:19 with fewer examples)
+1. Aggregation Examples (MS:20 plus more)
+1. Client Mechanisms (MT:3)
+1. Multiple Iterators (MS:21 and SummingCombiner fed into SummingCombiner to get unique counts?)
+DISTRIBUTED COMPUTING
+1. Accumulo VS HBase Atomic Increment (MS:22)
+1. Performance Comparision
+1. Perils of Distributed Computing (MS:31)
+1. Accumulo Testing (MS:32) - skippable.
+1. FATE: FAult Tolerant Executor (MS:33)
+1. Adampotence (MS:34)
+1. FATE Admin Tool (MS:39)
+1. FATE Summary (MS:40)
+DESIGN PATTERNS
+1. Design Patterns (MS:46)
+1. Event Table w/Inverted Index (MS:47)
+1. Type-agnostic Indexing (MT:10) - is this already covered? useful?
+1. Document Partitioned Index (MS:49) partition is for locality (i.e. sharding)
+1. Multidimensional Index (MS:51) - what is this?
+1. Graph Index (MS:52)
+1. Order Preserving Encodings (MT:11) - research these.
+1. Wikipedia Search Example (MT:27)
+1. Wikipedia Search Performance (MT:28)
+THE END
+1. Other Features (MS:54) (MT:30)
+1. Thank You (Question?)
+

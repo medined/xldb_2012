@@ -1,0 +1,11 @@
+meetup_20120509
+morgan_state_20120329
+xldb_2012/*.aux
+xldb_2012/*.log
+xldb_2012/*.nav
+xldb_2012/*.out
+xldb_2012/*.pdf
+xldb_2012/*.snm
+xldb_2012/*.toc
+xldb_2012/*.vrb
+xldb_2012/backup.tex

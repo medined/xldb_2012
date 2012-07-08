@@ -1,0 +1,29 @@
+droptable demo
+createtable demo
+insert bill attribute age -l public 49
+insert bill attribute discount -l private .40
+insert bill purchases sneakers -l public 100.00
+insert george attribute age -l private 38
+insert george purchases sneakers -l public 80.00
+insert george returns hat -l public 30.00
+
+setauths -s public -u root
+
+# this works
+scan -s public
+
+# this does not work.
+scan -s private
+
+setauths -s public,private -u root
+
+insert bill attribute age -l public|admin 49
+insert bill attribute discount -l private|admin .40
+insert bill purchases sneakers -l public|admin 100.00
+insert george attribute age -l private|admin 38
+insert george purchases sneakers -l public|admin 80.00
+insert george returns hat -l public|admin 30.00
+
+setauths -s admin -u root
+
+scan -s admin
